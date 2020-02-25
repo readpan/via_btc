@@ -24,6 +24,8 @@ def hello():
     responses += get_account_hashrate()
     responses += '\n'
     responses += get_account_wallet()
+    to_send_msg = 'https://sc.ftqq.com/SCU61940T3553c7eb29d0115392096e47a7f60fd35e54a4c36cd76.send?text=松原比特币信息&desp='+responses
+    requests.get(to_send_msg)
     return responses
 
 if __name__ == "__main__":
